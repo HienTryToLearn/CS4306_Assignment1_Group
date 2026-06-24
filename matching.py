@@ -222,7 +222,7 @@ for hosp_name, matched_residents in hospital_matches.items():
                 # Did the hospital hire someone they liked LESS 
                 #    than the unemployed resident? (Smaller index = better rank)
                 if unassigned_rank < hired_rank:
-                    print(f"🚨 Instability Type 1 Found: {hosp_name} prefers unassigned resident {unassigned_res} over {hired_res}!")
+                    print(f"Instability Type 1 Found: {hosp_name} prefers unassigned resident {unassigned_res} over {hired_res}!")
                     is_stable = False
 
 #Type 2 : a resident and hospital prefer each other over their current matches
@@ -264,7 +264,7 @@ for hosp_name in hospital_specs.keys():
                     
                     # Both parties want to ditch their matches!
                     if target_res_rank < hired_res_rank:
-                        print(f"🚨 Instability Type 2 Found: {hosp_name} and {resident} prefer each other!")
+                        print(f"Instability Type 2 Found: {hosp_name} and {resident} prefer each other!")
                         print(f"   -> {hosp_name} prefers {resident} over current hire {hired_res}")
                         if current_hosp:
                             print(f"   -> {resident} prefers {hosp_name} over current match {current_hosp}")

@@ -235,7 +235,7 @@ for hosp_name in hospital_specs.keys():
             continue
             
         # Check if they both ranked each other
-        if resident in hospital_ranks[hosp_name] and hosp_name in resident_ranks[resident]:
+        if resident in hospital_ranks[hosp_name] and hosp_name in resident_specs[resident]:
             
             # Find where this resident is currently matched
             current_hosp = None

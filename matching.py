@@ -177,7 +177,8 @@ for hosp_name, matched_residents in hospital_matches.items():
     else:
         # If a hospital didn't get any matches, just print its name
         print(f"{hosp_name}")
-
+ with open("results.txt", "w") as output:
+    output.write(...)
 #main purpose : stability checker to verify that the matching we found is stable, meaning there are no resident-hospital pairs that would prefer each other over their current matches
 #empty bucket to hold residents that are completely unassigned
 fully_unassigned_residents = [] 
@@ -273,7 +274,5 @@ for hosp_name in hospital_specs.keys():
 # Final stability printout
 if is_stable:
     print("SUCCESS: The matching is stable. No instabilities found!")
-    with open("results.txt", "w") as output:
-    output.write(...)
 else:
     print("FAILURE: Instabilities were detected in the final matching.")

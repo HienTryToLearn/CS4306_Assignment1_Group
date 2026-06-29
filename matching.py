@@ -273,5 +273,7 @@ for hosp_name in hospital_specs.keys():
 # Final stability printout
 if is_stable:
     print("SUCCESS: The matching is stable. No instabilities found!")
+    with open("results.txt", "w") as output:
+    output.write(...)
 else:
     print("FAILURE: Instabilities were detected in the final matching.")

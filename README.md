@@ -5,8 +5,11 @@ Assignment 1 – Stable Matching Problem
 Team Members 
 
 Jay Williams - jwill573@students.kennesaw.edu 
+
 Henry Tran - htran84@students.kennesaw.edu 
+
 Keaton Surfield - rsurfiel@students.kennesaw.edu 
+
 Cory Allen - calle216@students.kennesaw.edu 
 
 Project Description 
